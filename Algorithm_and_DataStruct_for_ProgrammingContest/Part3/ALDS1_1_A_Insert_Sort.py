@@ -1,11 +1,11 @@
-
+# Output Array
 def trace(A, N):
     for i in range(N):
         if i > 0:
             print(' ', end="")
         print(A[i], end="")
     print()
-
+# Insertion Sort
 def insertionSort(A, N):
     for i in range(1, N):
         v = A[i]
