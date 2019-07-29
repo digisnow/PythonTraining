@@ -28,7 +28,7 @@ def merge(A, n, left, mid, right):
 
 def mergeSort(A, n, left, right):
     if left + 1 < right:
-        mid = (left+ right) // 2
+        mid = (left + right) // 2
         mergeSort(A, n, left, mid)
         mergeSort(A, n, mid, right)
         merge(A, n, left, mid, right)
