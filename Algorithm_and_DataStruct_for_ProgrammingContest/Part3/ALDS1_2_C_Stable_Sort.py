@@ -1,3 +1,9 @@
+"""
+input n (ex: 5)
+input A (ex: H4 C9 S4 D2 C3)
+"""
+
+import copy
 class Card:
     def __init__(self, suit, value):
         self.suit = suit
@@ -38,8 +44,7 @@ C2 = [Card("","")]*N
 for i in range(N):
     C1[i] = Card(A[i][0], A[i][1])
 
-for i in range(N):
-    C2[i] = C1[i]
+C2 = copy.deepcopy(C1)
 
 bubble(C1, N)
 selection(C2, N)
