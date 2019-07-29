@@ -4,11 +4,11 @@ input A (ex: 8 5 9 2 6 3 7 1 10 4)
 """
 
 def merge(A, n, left, mid, right):
-    n1 = mid - left
-    n2 = right - mid
     global L
     global R
     global cnt
+    n1 = mid - left
+    n2 = right - mid
     for i in range(n1):
         L[i] = A[left + i]
     for i in range(n2):
