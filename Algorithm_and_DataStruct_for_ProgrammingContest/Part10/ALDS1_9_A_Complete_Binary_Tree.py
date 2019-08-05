@@ -1,3 +1,8 @@
+"""
+input H (ex: 5)
+input A (ex: 7 8 1 2 3)
+"""
+
 MAX = 100000
 
 def parent(i):
